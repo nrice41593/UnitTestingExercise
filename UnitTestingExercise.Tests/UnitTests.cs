@@ -10,6 +10,7 @@ namespace UnitTestingExercise.Tests
         [InlineData(4, 5, 6, 15)]
         [InlineData(15, 25, 35, 75)]
         [InlineData(123, 234, 345, 702)]
+        [InlineData(-23, 45, -220, -198)]
         public void Add(int num1, int num2, int num3, int expected)
         {
             //Arrange
@@ -38,6 +39,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(2, 6, 12)]
+        [InlineData(25, 3, 75)]
+        [InlineData(15, 3, 45)]
+        [InlineData(-23, 36, -828)]
+        [InlineData(-45, -3, 135)]
         public void Multiply(int num1, int num2, int expected)
         {
             //Arrange
@@ -50,6 +55,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(10, 2, 5)]
+        [InlineData(35, 5, 7)]
+        [InlineData(75, 5, 15)]
+        [InlineData(2344, 293, 8)]
+        [InlineData(47, 5, 9)]
         public void Divide(int num1, int num2, int expected)
         {
             //Arrange

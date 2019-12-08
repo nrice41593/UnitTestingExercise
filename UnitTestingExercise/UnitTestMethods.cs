@@ -15,12 +15,12 @@ namespace UnitTestingExercise
 
         public int Multiply(int num1, int num2)
         {
-            throw new NotImplementedException();
+            return num1 * num2;
         }
 
         public int Divide(int num1, int num2)
         {
-            throw new NotImplementedException();
+            return num1 / num2;
         }
 
         // Make sure your references are set properly
