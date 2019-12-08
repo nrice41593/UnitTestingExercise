@@ -23,6 +23,16 @@ namespace UnitTestingExercise
             return num1 / num2;
         }
 
+        public int GimmeANumber()
+        {
+            return 1020304;
+        }
+
+        public string YourName()
+        {
+            return "YourName";
+        }
+
         // Make sure your references are set properly
             // Righ-click on Dependencies in your .Tests project and set your reference
 

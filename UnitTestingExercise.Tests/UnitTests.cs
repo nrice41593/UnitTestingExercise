@@ -70,24 +70,25 @@ namespace UnitTestingExercise.Tests
         }
 
         [Fact]
-        public void YourMethodName()
+        public void GimmeANumber()
         {
             //Arrange
-
+            UnitTestMethods test = new UnitTestMethods();
             //Act
-
+            int actual = test.GimmeANumber();
             //Assert
-
+            Assert.Equal(1020304, actual);
         }
 
         [Fact]
-        public void YourMethodName2()
+        public void YourName()
         {
             //Arrange
-
+            UnitTestMethods test = new UnitTestMethods();
             //Act
-
+            string actual = test.YourName();
             //Assert
+            Assert.Equal("YourName", actual);
         }
     }
 }
