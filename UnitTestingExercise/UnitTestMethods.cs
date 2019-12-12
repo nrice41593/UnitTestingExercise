@@ -55,7 +55,20 @@ namespace UnitTestingExercise
         }
 
 
+        public string CallAlexa()
+        {
 
+            return "Hey Alexa!";
+
+        }
+
+
+        public string DearSanta()
+        {
+
+            return "Dear Santa,";
+
+        }
 
 
     }

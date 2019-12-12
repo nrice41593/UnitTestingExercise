@@ -61,25 +61,31 @@ namespace UnitTestingExercise.Tests
             Assert.Equal(actual, expected);
         }
 
-        //[Fact]
-        //public void YourMethodName()
-        //{
+        [Fact]
+        public void CallAlexa()
+        {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            string actual = challenger.CallAlexa();
             //Assert
+            Assert.Equal("Hey Alexa!", actual);
+        }
 
-        //}
-
-       // [Fact]
-        //public void YourMethodName2()
-        //{
+        [Fact]
+        public void DearSanta()
+        {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            string actual = challenger.DearSanta();
             //Assert
-       // }
+            Assert.Equal("Dear Santa,", actual);
+
+
+
+
+        }
+
     }
 }
