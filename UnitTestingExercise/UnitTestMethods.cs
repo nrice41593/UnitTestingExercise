@@ -30,12 +30,30 @@ namespace UnitTestingExercise
 
         }
 
-        public int Subtract(int num1, int num2)
+
+        public int Subtract(int minuend, int subtrahend)
         {
 
-            return num1 - num2;
+            return minuend - subtrahend;
 
         }
+
+
+        public int Multipy(int num1, int num2)
+        {
+
+            return num1 * num2;
+
+        }
+
+
+        public int Divide(int num1, int num2)
+        {
+
+            return num1 / num2;
+
+        }
+
 
 
 

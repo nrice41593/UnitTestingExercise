@@ -21,8 +21,8 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(8, 4, 4)]
-        [InlineData(20, 4, 16)]
-        [InlineData(5, 4, 1)]
+        [InlineData(10, 4, 6)]
+        [InlineData(12, 10, 2)]
         public void Subtract(int minuend, int subtrahend, int expected)
         {
             //Arrange
@@ -33,29 +33,33 @@ namespace UnitTestingExercise.Tests
             Assert.Equal(actual, expected);
         }
 
-        //[Theory]
-        //[InlineData]
-        //public void Multiply(int num1, int num2, int expected)
-        //{
+        [Theory]
+        [InlineData(4, 5, 20)]
+        [InlineData(3, 3, 9)]
+        [InlineData(7, 2, 14)]
+        public void Multiply(int num1, int num2, int expected)
+        {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            int actual = challenger.Multipy(num1, num2);
             //Assert
+            Assert.Equal(actual, expected);
+        }
 
-        //}
-
-        //[Theory]
-       //[InlineData()
-        //public void Divide(int num1, int num2, int expected)
-        //{
+        [Theory]
+        [InlineData(8, 2, 4)]
+        [InlineData(32, 2, 16)]
+        [InlineData(81, 9, 9)]
+        public void Divide(int num1, int num2, int expected)
+        {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            int actual = challenger.Divide(num1, num2);
             //Assert
-
-        //}
+            Assert.Equal(actual, expected);
+        }
 
         //[Fact]
         //public void YourMethodName()
