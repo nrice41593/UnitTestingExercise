@@ -19,17 +19,19 @@ namespace UnitTestingExercise.Tests
             Assert.Equal(actual, expected);
         }
 
-        //[Theory]
-        //[InlineData]
-        //public void Subtract(int minuend, int subtrhend, int expected)
-        //{
+        [Theory]
+        [InlineData(8, 4, 4)]
+        [InlineData(20, 4, 16)]
+        [InlineData(5, 4, 1)]
+        public void Subtract(int minuend, int subtrahend, int expected)
+        {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            int actual = challenger.Subtract(minuend, subtrahend);
             //Assert
-
-        //}
+            Assert.Equal(actual, expected);
+        }
 
         //[Theory]
         //[InlineData]
