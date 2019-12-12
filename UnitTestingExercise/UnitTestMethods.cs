@@ -21,6 +21,17 @@ namespace UnitTestingExercise
 
         // Create 2 methods that will utilize the [Fact] tests you wrote
 
-        
+
+
+        public int Add(int num1, int num2, int num3)
+        {
+
+            return num1 + num2 + num3;
+
+        }
+
+
+
+
     }
 }

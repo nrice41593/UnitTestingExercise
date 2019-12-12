@@ -6,72 +6,74 @@ namespace UnitTestingExercise.Tests
     public class UnitTests
     {
         [Theory]
-        [InlineData()]
+        [InlineData(3, 3, 1, 7)]
+        [InlineData(9, 6, 1, 16)]
+        [InlineData(3, 3, 5, 11)]
         public void Add(int num1, int num2, int num3, int expected)
         {
             //Arrange
-
+            UnitTestMethods challenger = new UnitTestMethods();
             //Act
-
+            int actual = challenger.Add(num1, num2, num3);
             //Assert
-
+            Assert.Equal(actual, expected);
         }
 
-        [Theory]
-        [InlineData()]
-        public void Subtract(int minuend, int subtrhend, int expected)
-        {
+        //[Theory]
+        //[InlineData]
+        //public void Subtract(int minuend, int subtrhend, int expected)
+        //{
             //Arrange
 
             //Act
 
             //Assert
 
-        }
+        //}
 
-        [Theory]
-        [InlineData()]
-        public void Multiply(int num1, int num2, int expected)
-        {
+        //[Theory]
+        //[InlineData]
+        //public void Multiply(int num1, int num2, int expected)
+        //{
             //Arrange
 
             //Act
 
             //Assert
 
-        }
+        //}
 
-        [Theory]
-        [InlineData()]
-        public void Divide(int num1, int num2, int expected)
-        {
+        //[Theory]
+       //[InlineData()
+        //public void Divide(int num1, int num2, int expected)
+        //{
             //Arrange
 
             //Act
 
             //Assert
 
-        }
+        //}
 
-        [Fact]
-        public void YourMethodName()
-        {
+        //[Fact]
+        //public void YourMethodName()
+        //{
             //Arrange
 
             //Act
 
             //Assert
 
-        }
+        //}
 
-        [Fact]
-        public void YourMethodName2()
-        {
+       // [Fact]
+        //public void YourMethodName2()
+        //{
             //Arrange
 
             //Act
 
             //Assert
-        }
+       // }
     }
 }
